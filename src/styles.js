@@ -66,16 +66,17 @@ export const useStyles = makeStyles((theme) => ({
   avatarInformation: {
     margin: 5,
     padding: 50,
-    position: "relative"
+    position: "relative",
+    '& .MuiAvatar-root ':{
+      width:165,
+      height:165,
+      position:"absolute",
+      top:90,
+      zIndex: 1
+    }
 
   },
-  avatar: {
-    width: "165px",
-    height: "165px",
-    position: "absolute",
-    top: 95,
-    zIndex: 1
-  },
+  
   SocialContainer: {
     padding: theme.spacing(0, 15),
     [theme.breakpoints.down('sm')]: {
@@ -85,7 +86,7 @@ export const useStyles = makeStyles((theme) => ({
 
   // footer
   footer:{
-    background:"red",
+    background:"#273746",
     height:"7rem",
     color:"white"
   }
