@@ -85,7 +85,7 @@ export const useStyles = makeStyles((theme) => ({
 
   // footer
   footer:{
-    background:"#273746",
+    background:"red",
     height:"7rem",
     color:"white"
   }
