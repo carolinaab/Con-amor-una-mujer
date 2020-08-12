@@ -1,5 +1,6 @@
 import React from 'react';
-import { teamInformation } from '../information/information'
+
+
 import { Grid, Typography, Avatar } from '@material-ui/core';
 import { useStyles, CirclesImage } from '../styles'
 import circles from '../assets/circles.png'
@@ -7,18 +8,16 @@ import circles from '../assets/circles.png'
 
 const image = 'https://images.ctfassets.net/hrltx12pl8hq/VZW7M82mrxByGHjvze4wu/216d9ff35b6980d850d108a50ae387bf/Carousel_01_FreeTrial.jpg?fit=fill&w=800&h=450'
 
-const TeamInformation = () => {
+const TeamInformation = ({info}) => {
     const classes = useStyles()
     return (
-        teamInformation.map(element => {
-            return (
-                <Grid item xs={12} md={4} key={element.id}  >
+        <Grid item xs={12} md={4}>
                     <Grid container justify="center" alignItems="center" className={classes.avatarInformation}>
                         <CirclesImage src={circles} />
                         <Avatar src={image} className={classes.avatar} />
                         <Grid item xs={12} >
                             <Typography variant="h4" align="left" gutterBottom>
-                                {element.name}
+                                {info.name}
                             </Typography>
                         </Grid>
                         <Grid item xs={12}  >
@@ -31,9 +30,7 @@ const TeamInformation = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-            )
-        })
-    );
+   );
 }
 
 export default TeamInformation;

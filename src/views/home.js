@@ -1,6 +1,6 @@
 import React from 'react';
 import {HomeContainer, ContainerCenter, TextContainer, Text, Buttons } from '../styles'
-import {Button, Typography} from '@material-ui/core';
+import {Typography} from '@material-ui/core';
 
 const Home = () => {
 

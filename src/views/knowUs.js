@@ -1,10 +1,12 @@
 import React from 'react';
-import { Grid, Box, Typography, Avatar, } from '@material-ui/core';
+import { Grid, Box, Typography} from '@material-ui/core';
 import { useStyles, DivContainer, DivImage, Buttons, IconsButton } from '../styles'
 import TeamInformation from '../components/teamInformation'
 import facebook from '../assets/face.png'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import { teamInformation } from '../information/information'
+
 
 const KnowUs = () => {
 
@@ -14,21 +16,23 @@ const KnowUs = () => {
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12}>
                     <Grid container justify="center" alignItems="center">
-                        {/* <Grid container > */}
                         <Grid item xs={12}>
                             <Typography variant="h4" align="center">
                                 Conócenos
                            </Typography>
                         </Grid>
                         {
-                            <TeamInformation />
+                            teamInformation.map(info => {
+                                return (
+                                    <TeamInformation key={info.id} info={info} />
+
+                                )
+                            })
 
                         }
-
-
-                        {/* </Grid> */}
                     </Grid>
                 </Grid>
+
                 {/* description */}
                 <Grid item xs={12}>
                     <Grid container className={classes.containerDescription}>

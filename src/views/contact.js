@@ -4,7 +4,6 @@ import { ContactImage, ContactContainer, ContactDescription, SocialIcon } from '
 import facebook from '../assets/facebook.png'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import { IconsButton } from '../styles'
 
 
 const Contact = () => {

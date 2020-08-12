@@ -6,7 +6,7 @@ import Blogs from './views/blog';
 import KnowUs from './views/knowUs';
 import Contact from './views/contact';
 import Directory from './views/directory';
-
+import Footer from './components/footer';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route exact path="/contacto" component={Contact}/>
         <Route exact path="/directorio" component={Directory}/>
       </Switch>
+      <Footer/>
     </Router>
   );
 }

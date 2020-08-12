@@ -40,7 +40,6 @@ export const useStyles = makeStyles((theme) => ({
   containerDescription: {
     background: "#FDBCB4",
     marginTop: 100,
-    marginBottom: 100,
     height: "100%",
     paddingBottom: 25,
     paddingTop: 25,
@@ -71,8 +70,8 @@ export const useStyles = makeStyles((theme) => ({
 
   },
   avatar: {
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    width: "165px",
+    height: "165px",
     position: 'absolute',
     top: 95,
     zIndex: 1
@@ -82,6 +81,13 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       padding: theme.spacing(0, 10, 0, 0)
     }
+  },
+
+  // footer
+  footer:{
+    background:"#273746",
+    height:"7rem",
+    color:"white"
   }
 
 
@@ -192,35 +198,35 @@ export const IconsButton = styled(IconButton)(({ theme }) => ({
 }))
 
 export const ContactImage = styled('div')({
-  backgroundImage:`url(${image})`,
-  backgroundRepeat:"no-repeat",
-  backgroundSize:"cover",
-  height:"80vh",
-  width:"100%"
+  backgroundImage: `url(${image})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  height: "100vh",
+  width: "100%"
 })
 export const ContactContainer = styled(Grid)({
   minHeight: "90vh",
 })
-export const ContactDescription = styled(Grid)(({theme})=>({
-    padding:theme.spacing(10, 10, 10,10),
-  '& .MuiTypography-h4':{
-    fontWeight:"bold",
-    marginBottom:20,
-    margin:"auto"
-    
+export const ContactDescription = styled(Grid)(({ theme }) => ({
+  padding: theme.spacing(10, 10, 10, 10),
+  '& .MuiTypography-h4': {
+    fontWeight: "bold",
+    marginBottom: 20,
+    margin: "auto"
+
   },
-  
-  '& .MuiTypography-subtitle1':{
-    marginTop:30,
-    fontWeight:"bold"
+
+  '& .MuiTypography-subtitle1': {
+    marginTop: 30,
+    fontWeight: "bold"
   }
 }))
 
 export const SocialIcon = styled(IconButton)({
   background: props => props.background,
   color: "white",
-  width:63,
-  height:63,
+  width: 63,
+  height: 63,
   margin: props => props.margin,
 
 })
