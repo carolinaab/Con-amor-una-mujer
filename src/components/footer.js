@@ -8,7 +8,7 @@ const Footer = () => {
 
     return ( 
         <Grid container alignItems="center" className={classes.footer}>
-            <Grid xs={12}>
+            <Grid item xs={12}>
                 <Typography align="center">&copy; 2020 Con Amor... una mujer</Typography>
             </Grid>
         </Grid>

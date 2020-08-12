@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
   avatar: {
     width: "165px",
     height: "165px",
-    position: 'absolute',
+    position: "absolute",
     top: 95,
     zIndex: 1
   },
