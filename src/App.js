@@ -7,7 +7,8 @@ import KnowUs from './views/knowUs';
 import Contact from './views/contact';
 import Directory from './views/directory';
 import Footer from './components/footer';
-
+import Economia from './components/economy'
+import Salud from './components/saludPost'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route exact path="/conocenos" component={KnowUs}/>
         <Route exact path="/contacto" component={Contact}/>
         <Route exact path="/directorio" component={Directory}/>
+        <Route exact path="/economia" component={Economia}/>
+        <Route exact path="/salud" component={Salud}/>
       </Switch>
       <Footer/>
     </Router>

@@ -10,10 +10,9 @@ import {
 
 const image = 'https://images.ctfassets.net/hrltx12pl8hq/VZW7M82mrxByGHjvze4wu/216d9ff35b6980d850d108a50ae387bf/Carousel_01_FreeTrial.jpg?fit=fill&w=800&h=450'
 
+// small component classes are written with styled others use makestyles 
+
 export const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(6),
   },
@@ -24,7 +23,7 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     height: 100,
-    color: "black"
+    color: "black",
   },
   menuContainer: {
 
@@ -89,8 +88,32 @@ export const useStyles = makeStyles((theme) => ({
     background:"#273746",
     height:"7rem",
     color:"white"
-  }
+  },
 
+  //post 
+
+  menuBlog:{
+    marginTop:25,
+  },
+  containerPost:{
+    paddingBottom: "50%"
+  },
+  appbarMobile: {
+    background: "#FDBCB4",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: 100,
+    paddingLeft:20,
+    
+  },
+  buttonBar: {
+    margin: "10px",
+    paddingLeft: "10px",
+    right: 0,
+    width: "10%",
+    background: "transparent"
+  }
 
 }));
 
@@ -148,7 +171,12 @@ export const Buttons = styled(Button)(({ theme }) => ({
   margin: theme.spacing(2),
   textTransform: "none",
   fontSize: 17,
-  fontWeight: 400
+  fontWeight: 400,
+  maxWidth:150,
+  '&:hover':{
+    background:"#FA8072"
+  }
+  
 }))
 
 export const DivContainer = styled('div')(({ theme }) => ({
@@ -229,5 +257,8 @@ export const SocialIcon = styled(IconButton)({
   width: 63,
   height: 63,
   margin: props => props.margin,
+  '&:hover':{
+    background:props => props.hover
+  }
 
 })

@@ -34,7 +34,7 @@ const Contact = () => {
                     <SocialIcon margin="10px" background= 'radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 2%, #fd5949 40%,#d6249f 60%,#285AEB 100%)'>
                         <InstagramIcon fontSize="large"/>
                     </SocialIcon >
-                    <SocialIcon background= "#00acee">
+                    <SocialIcon background= "#00acee" hover="#00acee" >
                         <TwitterIcon fontSize="large"/>
                     </SocialIcon >
                 </Grid>
